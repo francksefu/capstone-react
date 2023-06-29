@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+
+:root {
+  --bg-color: rgb(251, 81, 147);
+  --primary-color: rgb(205, 64, 117);
+  --secondary-color: rgb(178, 61, 102);
+  --text-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--bg-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row-50 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row-40 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+
+.center {
+  text-align: start;
+  padding: 0 0 0 20px;
+  margin: 0;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.row-50 > div {
+  padding: 10px 20px 20px 20px;
+  text-align: end;
+  color: #fff;
+}
+
+.row-40 > div {
+  padding: 40px 20px 20px 20px;
+  text-align: end;
+  color: #fff;
+}
+
+.fleche {
+  margin-bottom: 70px;
+}
+
+a {
+  color: #fff;
+}
+
+.range {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-size: 22px;
+  color: #fff;
+  padding: 5px;
+  background-color: var(--primary-color);
 }
 
-.App-link {
-  color: #61dafb;
+.font-color {
+  background-color: var(--primary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.row-50 > div:nth-child(1) { background-color: var(--secondary-color); }
+.row-50 > div:nth-child(4) { background-color: var(--secondary-color); }
+.row-50 > div:nth-child(5) { background-color: var(--secondary-color); }
+.row-50 > div:nth-child(8) { background-color: var(--secondary-color); }
+
+.microphone {
+  margin-right: 20px;
+}
+
+.customers {
+  border-collapse: collapse;
+  width: 100%;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.customers td,
+#customers th {
+  padding: 20px 8px;
+}
+
+.customers tr:nth-child(odd) { background-color: var(--secondary-color); }
+
+.customers tr:hover { background-color: #ddd; }
+
+.separate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-fleche {
+  padding: 10px 0 10px 20px;
 }

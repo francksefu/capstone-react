@@ -13,7 +13,6 @@ function App() {
   }, [dispatch]);
   return (
     <div>
-      <h1> ICI </h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BigView />} />

@@ -25,6 +25,9 @@ export const dataSlice = createSlice({
     goWithData: (state, action) => {
       state.date = action.payload;
     },
+    fetching: (state, action) => {
+      state.finance = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -37,5 +40,5 @@ export const dataSlice = createSlice({
       });
   },
 });
-export const { goWithData } = dataSlice.actions;
+export const { goWithData, fetching } = dataSlice.actions;
 export default dataSlice.reducer;

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import Navbar from './Navbar';
 
 const DetailViewItem = () => {
   const dates = useSelector((store) => store.finance.date);
@@ -8,39 +9,152 @@ const DetailViewItem = () => {
   }
   return (
     <div>
-      <NavLink to="/">{'<'}</NavLink>
-      <div>
-        <span>cash and cash equivalents : </span>
-        <span>{dates.date}</span>
+      <Navbar view="Balance detail" year={' '} />
+      <div className="row-40">
+        <div className="right-flex">{}</div>
+        <div className="left-flex">
+          <h2>{dates.date}</h2>
+          <p>
+            debt:
+            {dates.netDebt}
+          </p>
+        </div>
       </div>
-      <div>
-        <span>short term investments : </span>
-        <span>{dates.shortTermInvestments}</span>
-      </div>
-      <div>
-        <span>cash and short term investments : </span>
-        <span>{dates.cashAndShortTermInvestments}</span>
-      </div>
-      <div>
-        <span>net receivables : </span>
-        <span>{dates.netReceivables}</span>
-      </div>
-      <div>
-        <span>other current assets : </span>
-        <span>{dates.otherCurrentAssets}</span>
-      </div>
-      <div>
-        <span>total current assets : </span>
-        <span>{dates.totalCurrentAssets}</span>
-      </div>
-      <div>
-        <span>property plant equipmentNet : </span>
-        <span>{dates.propertyPlantEquipmentNet}</span>
-      </div>
-      <div>
-        <span>goodwill : </span>
-        <span>{dates.goodwill}</span>
-      </div>
+      <h4 className="center">Details</h4>
+      <table className="customers">
+        <tr>
+          <td>cash and cash equivalents : </td>
+          <td className="separate">
+            <span>
+              {dates.cashAndCashEquivalents}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>short term investments : </td>
+          <td className="separate">
+            <span>
+              {dates.shortTermInvestments}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>cash and short term investments : </td>
+          <td className="separate">
+            <span>
+              {dates.cashAndShortTermInvestments}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>net receivables : </td>
+          <td className="separate">
+            <span>
+              {dates.netReceivables}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>other current assets : </td>
+          <td className="separate">
+            <span>
+              {dates.otherCurrentAssets}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>total current assets : </td>
+          <td className="separate">
+            <span>
+              {dates.totalCurrentAssets}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>property plant equipmentNet : </td>
+          <td className="separate">
+            <span>
+              {dates.propertyPlantEquipmentNet}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>goodwill : </td>
+          <td className="separate">
+            <span>
+              {dates.goodwill}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>tax sssets : </td>
+          <td className="separate">
+            <span>
+              {dates.taxAssets}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>total non current assets : </td>
+          <td className="separate">
+            <span>
+              {dates.totalNonCurrentAssets}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td> total assets: </td>
+          <td className="separate">
+            <span>
+              {dates.totalAssets}
+              $
+            </span>
+            <span>
+              <BsArrowRightCircle />
+            </span>
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };

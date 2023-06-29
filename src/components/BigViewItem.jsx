@@ -1,4 +1,5 @@
 import { PropTypes } from 'prop-types';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { goWithData } from '../redux/dataSlice/dataSlice';
@@ -6,17 +7,22 @@ import { goWithData } from '../redux/dataSlice/dataSlice';
 const BigViewItem = ({ finance }) => {
   const dispatch = useDispatch();
   return (
-    <div>
-      <NavLink to="/detail" onClick={() => dispatch(goWithData(finance))}> click</NavLink>
-      <h4>{finance.date}</h4>
-      <div>
-        <span>net debt:</span>
-        <span>
-          {' '}
-          $
-          {finance.netDebt}
-        </span>
-      </div>
+    <div className="right-flex">
+      <NavLink to="/detail" onClick={() => dispatch(goWithData(finance))}>
+        <div className="fleche">
+          <BsArrowRightCircle />
+        </div>
+        <h4>{finance.date}</h4>
+        <div>
+          <span>net debt:</span>
+          <br />
+          <span>
+            {' '}
+            $
+            {finance.netDebt}
+          </span>
+        </div>
+      </NavLink>
     </div>
   );
 };
