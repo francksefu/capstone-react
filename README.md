@@ -73,8 +73,8 @@ one page for the item details
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-video link : https://drive.google.com/file/d/1mAPtJy6xur8hYdPNzCEExu0TXnmNo9bl/view?usp=sharing
-web app link : https://unrivaled-basbousa-5981a9.netlify.app/
+video link : [video](https://drive.google.com/file/d/1mAPtJy6xur8hYdPNzCEExu0TXnmNo9bl/view?)usp=sharing
+web app link :[web app](https://unrivaled-basbousa-5981a9.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +157,7 @@ If you like this project leave it a star.
 
 Give credit to everyone who inspired your codebase.
 
-All thanks to Nelson Sakwa on Behance, the author of the original design, as required by the Creative Commons License(https://creativecommons.org/licenses/by-nc/4.0/).
+All thanks to Nelson Sakwa on Behance, the author of the original design, as required by the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
