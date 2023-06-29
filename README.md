@@ -1,70 +1,169 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="readme-top"></a>
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
 
-### `npm start`
+  <h3><b> React capstone project - Metrics webapp README</b></h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# 📗 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-### `npm run build`
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This React capstone project (remember what they are?)is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux.
+I was select an API that provides numeric data about finance and then build the webapp around it. The webapp will have several pages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+one page with a list of items that could be filtered by some parameters; in my case, it's a list of metrics that can be filtered by the date . This page is my homepage.
+one page for the item details
 
-### `npm run eject`
+## 🛠 Built With <a name="built-with"></a>
+- [x] React, Redux-toolkit,
+- [x] axios, for making HTTP requests 
+- [x] react-icons for icons
+- [x] react-router-dom, for routes
+- [x] Bootstrap CSS framework👍
+- [x] Use redux Global state management
+- [x] Use actions and reducers inside component
+- [x] Use a good File structore to place the componenst, pages and store
+- [x] Use Create React App to setup up react component
+### Tech Stack <a name="tech-stack"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://react.dev/">React</li>
+    <li><a href="https://react-icons.github.io/react-icons/">react-icons</li>
+    <li><a href="https://reactrouter.com/en/main">React-Router</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux-ToolKit</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Key Features <a name="key-features"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [x] Apply JavaScript best practices and language style guides in code.👌
+- [x] Use React components to create Space Hub App
+- [x] Use JavaScript helper functions.💯
+- [x] Use Financial modeling prep API to access data.
+- [x] Use `createAsyncThunk` with `axios`
+- [x] Use `useRoutes` from `react-router-dom` to stablish navigation links 
+- [x] Use semantic HTML tags.
+- [x] Apply best practices in HTML JSX.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+video link : https://drive.google.com/file/d/1mAPtJy6xur8hYdPNzCEExu0TXnmNo9bl/view?usp=sharing
+web app link : https://unrivaled-basbousa-5981a9.netlify.app/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+To get a local copy up and running, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites <a name="prerequisites"></a>
+- ✔ A professional editer such as [VS Code](https://code.visualstudio.com/download).
+- ✔ An Updated web browser such as Google Chrome, you can download it from [here](https://www.google.com/chrome/).
+- ✔ [Node.js](https://nodejs.org/en/download) installed in your machine.
+- ✔ [Git](https://git-scm.com/downloads) installed in your machine.
+- ✔ Sign in or sign up to your [Github](https://github.com/) account.
 
-### Making a Progressive Web App
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To setup and install this project, follow the below steps:
+- Clone this project by the command: 
 
-### Advanced Configuration
+```
+$ git clone https://github.com/francksefu/capstone-react.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Then switch to the project folder by the bellow query:
 
-### Deployment
+```
+$ cd capstone-react
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Install <a name="install"></a> 
+```
+- Install npm dependencies with:
+$ npm install
 
-### `npm run build` fails to minify
+$ npm install
+```
+### Usage <a name="usage"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the project, execute the following command:
+ open the project by launching the Live Server plugging by run the command 'npm start' (or your code editor) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Franck**
+
+- GitHub: [francksefu](https://github.com/francksefu)
+- Twitter: [francksefu](https://twitter.com/franck_sefu)
+- LinkedIn: [francksefu](https://www.linkedin.com/in/franck-sefu-884705254/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- WE are working to make it responsive, so it works on any screensize.
+-WE will using API to connecte it with other app
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project leave it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+Give credit to everyone who inspired your codebase.
+
+All thanks to Nelson Sakwa on Behance, the author of the original design, as required by the Creative Commons License(https://creativecommons.org/licenses/by-nc/4.0/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
