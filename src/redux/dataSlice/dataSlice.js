@@ -27,7 +27,7 @@ export const dataSlice = createSlice({
     },
     fetching: (state, action) => {
       state.finance = action.payload;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
