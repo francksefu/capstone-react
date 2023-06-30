@@ -8,7 +8,7 @@ const BigViewItem = ({ finance }) => {
   const dispatch = useDispatch();
   return (
     <div className="right-flex">
-      <NavLink to="/detail" onClick={() => dispatch(goWithData(finance))}>
+      <NavLink to={`/detail/${finance.date}`} onClick={() => dispatch(goWithData(finance))}>
         <div className="fleche">
           <BsArrowRightCircle />
         </div>

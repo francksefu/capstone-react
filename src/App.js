@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<BigView />} />
 
-          <Route path="/detail" element={<DetailViewItem />} />
+          <Route path="/detail/:date" element={<DetailViewItem />} />
 
         </Routes>
       </BrowserRouter>
